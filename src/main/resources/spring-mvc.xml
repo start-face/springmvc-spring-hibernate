@@ -13,10 +13,10 @@
 
     <context:component-scan base-package="com.ssh.controller"/>
     <mvc:annotation-driven/>
-    <mvc:default-servlet-handler/>
-    <!--<mvc:resources mapping="/js/**" location="/WEB-INF/view"/>-->
-    <!--<mvc:resources mapping="/images/**" location="/WEB-INF/images"/>-->
-    <!--<mvc:resources mapping="/css/**" location="/WEB-INF/css"/>-->
+    <!--<mvc:default-servlet-handler/>-->
+    <mvc:resources mapping="/js/**" location="/WEB-INF/view"/>
+    <mvc:resources mapping="/images/**" location="/WEB-INF/images"/>
+    <mvc:resources mapping="/css/**" location="/WEB-INF/css"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>
@@ -25,7 +25,7 @@
 
     <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <!-- 指定所有没有指定的异常,都跳转到该页面 -->
-        <property name="defaultErrorView" value="500"/>
+        <property name="defaultErrorView" value="errorPage/500"/>
         <!-- 跳转时携带异常对象 -->
         <property name="exceptionAttribute" value="ex"/>
     </bean>
