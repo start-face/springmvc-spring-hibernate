@@ -9,6 +9,7 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
+ * 用户实体
  * @author FaceFeel
  * @Created 2018-02-05 20:15
  */

@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 
 /**
+ * 用户操作类
  * @author FaceFeel
  * @Created 2018-02-05 20:24
  */
-
 @Controller
 @RequestMapping("/user")
 public class UserController {

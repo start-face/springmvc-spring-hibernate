@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import java.io.Serializable;
 
 /**
+ * 用户操作dao层接口实现类
  * @author FaceFeel
  * @Created 2018-02-05 20:22
  */
@@ -17,6 +18,11 @@ public class UserDaoImpl implements UserDao {
     @Resource
     private HibernateTemplate hibernateTemplate;
 
+    /**
+     * 添加用户方法
+     * @param userModel 用户实体
+     * @return 布尔
+     */
     @Override
     public Boolean addUser(UserModel userModel) {
 
